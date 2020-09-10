@@ -1,9 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700')
+
+$fonts: 'Roboto', Helvetica, sans-serif
+
+*
+  box-sizing: border-box
+body
+  background-color: #ddd
+  margin: 0
+  padding: 0
+  font-family: $fonts
+  font-weight: 300
+h1, h2, h3, h4
+  font-weight: 100
+
+.main
+  width: 65em
+  margin: 2em auto
+
+  display: flex
+  justify-content: center
+
+  @media(max-width: 66em)
+    width: 48em
+
+  @media(max-width: 48em)
+    display: block
+    margin: 0
+    width: 100vw
+
+
+
 #question-field{
     border-style: groove;
     border-width: 1px;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
 }
+
 .question{
     width: 400px;
     font-family: 'Raleway', sans-serif;
